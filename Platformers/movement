@@ -1,0 +1,11 @@
+Summary- Contains code for a platformer Game.
+
+------------------
+Table of contents
+------------------
+1. Movement/ player controls
+2. platforms
+3. coins/ instanciating levels
+4. enemy ai
+5. gui
+
