@@ -1,0 +1,6 @@
+summary- character moving using keyboard input left and right
+
+goals
+1. input
+2. change position of character
+3. smoothen out the movement
