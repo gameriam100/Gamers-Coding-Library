@@ -3,8 +3,9 @@ summary: character controller... slime jumps smoothly, and sideways pull movemen
 goals
 1. input for jumping and moving
 2. smooth platform jump mechanic -> gravity, acceleration, gravity fall multiplier, velocity.
-3. sideways pull movement
+3. sideways pull movement -> 
 
 concepts:
 velocity- continuouse movement in a direction.
+get_wall_normal() - tests collisions on CharacterBody2Ds. The direction at which it collides with a wall. (left, right, up, down)
 
