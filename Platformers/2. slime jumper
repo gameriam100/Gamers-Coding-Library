@@ -4,3 +4,7 @@ goals
 1. input for jumping and moving
 2. smooth platform jump mechanic -> gravity, acceleration, gravity fall multiplier, velocity.
 3. sideways pull movement
+
+concepts:
+velocity- continuouse movement in a direction.
+
