@@ -1,1 +1,21 @@
 levels, scenes, and more
+
+short vid on scene instancing
+https://www.youtube.com/watch?v=PQHtmkMRhwQ
+
+
+my custom code for instancing using a dictionary 
+
+extends Node2D
+
+@export var current_level : Dictionary[String,PackedScene]
+@onready var spawn = $spawn
+
+#instantiator
+#deletor
+#customized using a animation controller
+
+func _ready() -> void:
+	var instance_new_scene = current_level["level_1"].instantiate()
+	spawn.add_child(instance_new_scene)
+	instance_new_scene.global_position = spawn.global_position
