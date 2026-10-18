@@ -1,3 +1,17 @@
+summary: character controller... slime can jump, move left and right by sliding.
+
+Nodes needed: uses 2 timers, characterBody2D
+
+goals
+1. input for jumping and moving
+2. smooth platform jump mechanic -> gravity, acceleration, gravity fall multiplier, velocity, coyote jump, input buffer.
+3. sideways pull movement -> horizontal_pull, pull_speed, pull_acceleration
+
+concepts:
+velocity- continuouse movement in a direction.
+get_wall_normal() - tests wall collisions on CharacterBody2Ds.
+acceleration, gravity, coyote jump, input buffer, is_on_floor()
+
 extends Node2D
 
 @export var player: CharacterBody2D
@@ -79,5 +93,3 @@ func _make_jump(delta):
 	current_gravity_acceleration = 0
 	coyote_timer.stop()
 	input_buffer.stop()
-	
-#Charge coyote jump thats really tall
